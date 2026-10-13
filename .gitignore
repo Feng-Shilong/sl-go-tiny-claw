@@ -1,0 +1,27 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# 编译产物
+bin/
+dist/
+*.exe
+# go build ./... 在仓库根目录产出的可执行文件
+/claw
+/go-tiny-claw
+/cmd/claw/claw
+# go run 执行前创建的 umask 探针临时文件
+*-go-tmp-umask
+
+# 测试与覆盖率
+*.test
+*.out
+coverage.txt
+
+# 环境变量（API Key 绝不入库）
+.env
+.env.local
+
+# macOS
+.DS_Store
